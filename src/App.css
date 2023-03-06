@@ -41,7 +41,6 @@ html, body {
 .Header {
   height: 70px;
   width: 100%;
-  position: absolute;
   background-color: rgb(242, 198, 141);
   display: flex;
   flex-direction: row;
@@ -276,4 +275,28 @@ textarea {
     font-family: 'Courier New', Courier, monospace;
     width: 75px;
     height: 30px;
+}
+
+@media all and (max-width: 800px) {
+    #actions-area{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #options-part{
+      height: 50%;
+      width: 100%;
+    }
+    #buttons-part{
+      height: 50%;
+      width: 100%;
+    }
+    #code-textarea {
+      height: 60%;
+    }
+    #action-buttons {
+      height: 35%;
+    }
+    .input-label{
+      font-size: 12px;
+    }
 }
