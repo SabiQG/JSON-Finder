@@ -28,8 +28,10 @@ export const Content: React.FC<props> = ({setFindeResult, setModal}) => {
 
     const beautify_data = ():void => {
         try {
-            setCodeInput(JSON.stringify(JSON.parse(codeInput), null, 2));
-            toast(`JSON beautified!`, {  position: "bottom-right", icon: '✅' });
+            var data = JSON.stringify(JSON.parse(codeInput), null, 2);
+            setCodeInput(data);
+            navigator.clipboard.writeText(data);
+            toast(`JSON beautified and copied!`, {  position: "bottom-right", icon: '✅' });
         } catch (e) {
             toast(`Error parsing JSON`, {  position: "bottom-right", icon: '🌋' });
         };
