@@ -1,7 +1,11 @@
 import React from 'react';
-import GitHubButton from 'react-github-btn'
 
 export const Header: React.FC = () => {
+
+    const redirect = (path:string):void => {
+        window.location.href = 'https://github.com/'+path;
+    };
+
     return (
         <div className='Header'>
             <div id='header-tittle'>
@@ -9,10 +13,10 @@ export const Header: React.FC = () => {
             </div>
             <div id='header-options'>
                 <div style={{margin:"20px"}}>
-                    <GitHubButton href="https://github.com/SabiQG" data-size="large" aria-label="Follow @SabiQG on GitHub">Follow @SabiQG</GitHubButton>
+                    <button className='gh-button' onClick={() => redirect("SabiQG")}>@SabiQG</button>
                 </div>
                 <div>
-                    <GitHubButton href="https://github.com/SabiQG/JSON-Finder" data-icon="octicon-star" data-size="large" aria-label="Star SabiQG/JSON-Finder on GitHub">Star</GitHubButton>
+                    <button className='gh-button' onClick={() => redirect("SabiQG/JSON-Finder")}>Code</button>
                 </div>
             </div>
         </div>

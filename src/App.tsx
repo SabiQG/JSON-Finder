@@ -1,4 +1,6 @@
 import React from 'react';
+import { Toaster } from 'react-hot-toast';
+
 import './App.css';
 
 import { Header } from './frames/header';
@@ -9,6 +11,7 @@ const App: React.FC = () => {
     <div className="App">
       <Header/>
       <Content/>
+      <Toaster />
     </div>
   );
 };

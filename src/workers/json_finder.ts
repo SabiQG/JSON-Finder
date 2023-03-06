@@ -1,10 +1,10 @@
-interface path_find {
+export interface path_find {
     path: string;
     type: "key" | "value";
     value: string;
 };
 
-export default class Find {
+export class Find {
 
     object:any;
     fetch_word:string;
