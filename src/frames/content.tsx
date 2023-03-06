@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { Codebox } from "../components/content/codebox";
 
 export const Content: React.FC = () => {
 
@@ -9,7 +10,7 @@ export const Content: React.FC = () => {
         <div className="Content">
             <div id="add-space"></div>
             <div id="terminal-space">
-                
+                <Codebox/>
             </div>
             <div id="add-space"></div>
         </div>

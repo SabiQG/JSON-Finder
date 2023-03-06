@@ -1,9 +1,30 @@
 html, body {
+  font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
     outline: none;
     height: 100%;
     width: 100%;
     margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1d1d1dc9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(234, 205, 166);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(120%);
 }
 
 #root {
@@ -20,7 +41,7 @@ html, body {
 .Header {
   height: 70px;
   width: 100%;
-  background-color: #DDD0C8;
+  background-color: rgb(242, 198, 141);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -79,4 +100,106 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#action-area {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000c9;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#header-actions {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(234, 205, 166);
+  display: flex;
+  align-items: center;
+}
+
+#code-textarea {
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  height: 75%;
+}
+
+#pannel-tittle {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+textarea {
+  height: auto;
+  resize: none;
+  color: #b5b3b3;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  background: transparent !important;
+  border-style: none; 
+  border-color: Transparent; 
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#action-buttons {
+  width: 100%;
+  height: 25%;
+  background-color: rgb(216 215 213);
+  display: flex;
+  flex-direction: column;
+}
+
+#input-area {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#find-input {
+  width: 99%;
+  background-color: #ead3a6;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#actions-area {
+  height: 65%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-label {
+  font-size: 12px;
+}
+
+.options-part {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.option-box::before {
+  background-color: #ead3a6;
+}
+
+.checkbox-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#find-button {
+  height: 25px;
+  width: 75px;
+  font-family: 'Courier New', Courier, monospace;
+  border-color: gray; 
+  cursor: pointer;
 }
