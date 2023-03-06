@@ -4,7 +4,7 @@ interface path_find {
     value: string;
 };
 
-export default class {
+export default class Find {
 
     object:any;
     fetch_word:string;
