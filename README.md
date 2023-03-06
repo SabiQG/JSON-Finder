@@ -2,7 +2,7 @@
 
 Tool designed for finding strings along all the JSON objects.
 
-![](https://gyazo.com/91d87c3c90a6b51a0d268da9303ed97b)
+![](https://i.gyazo.com/91d87c3c90a6b51a0d268da9303ed97b.gif)
 
 ## Available Scripts
 
